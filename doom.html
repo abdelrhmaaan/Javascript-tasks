@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+  <style>
+    .mainImg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      background-image: url(222.jpg); /* Replace with the actual path to your background image */
+        width: 200px;
+        height: 200px;
+      background-size: cover;
+      background-position: center;
+      color:black; /* Text color on top of the background image */
+    }
+
+    .card-img-top {
+      height: 200px; /* Set a fixed height for your images */
+      object-fit: cover; /* Maintain the aspect ratio of the images */
+    }
+  </style>
+  <title>Image Card Layout</title>
+</head>
+<body>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/slider-1.jpg" class="card-img-top" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/slider-2.jpg" class="card-img-top" alt="Image 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/slider-3.jpg" class="card-img-top" alt="Image 3">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/thumb-1.jpg" class="card-img-top" alt="Image 4">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/thumb-2.jpg" class="card-img-top" alt="Image 5">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/thumb-3.jpg" class="card-img-top" alt="Image 6">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+<center>
+
+    <div id="background"  class="mainImg d-none">
+        <i id="prev" class="fa fa-circle-arrow-left"></i>
+        <i id="close" class="fa-times-circle"></i>
+        <i id="next" class="fa fa-circle-arrow-right"></i>
+    </div>
+</center>
+  </div>
+
+  <script src="doom.js"></script>
+</body>
+</html>
